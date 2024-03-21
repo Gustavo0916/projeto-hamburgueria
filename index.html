@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Hambúrgueria</title>
+</head>
+<body>
+    
+    <main id="container-principal"> <!-- INICIO CONTAINER PRINCIPAL -->
+        <section id="home"> <!-- INICIO HOME -->
+            <header>
+                <div class="caixa-logo">
+                    <img src="imagens/img-logo.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li> <button style="color: rgb(214, 9, 9);" type="button"> Home </button> </li>
+                        <li> <button type="button"> Lanches </button> </li>
+                        <li> <button type="button"> Loja </button> </li>
+                        <li> <button type="button"> Contato </button> </li>
+                    </ul>
+                </nav>
+                <div class="caixa-right-header">
+                    <div class="btn-pedido">
+                        <button type="button"> Fazer pedido </button>
+                    </div>
+                    <div class="caixa-icon-header">
+                        <div class="numero-carrinho">
+                            <p> 0 </p>
+                        </div>
+                        <i class="bi bi-bag-fill"></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile"> <!-- INICIO MENU MOBILE -->
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>  
+
+                <nav class="navMobile">
+                    <ul>
+                        <li> <button type="button"> Home </button> </li>
+                        <li> <button type="button"> Lanches </button> </li>
+                        <li> <button type="button"> Loja </button> </li>
+                        <li> <button type="button"> Contato </button> </li>
+                        <div class="btn-pedido">
+                            <button type="button"> Fazer pedido </button>
+                        </div>
+                    </ul>
+                </nav>
+            </div> <!-- FIM MENU MOBILE -->
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+            <div class="caixa-principal-home"> <!-- INICIO CAIXA PRINCIPAL HOME -->
+                <div class="caixa-left-home">
+                    <div class="titulo-novidade-cardapio">
+                        <p> Novidade no cardápio </p>
+                        <p class="linha">  </p>
+                    </div>
+                    <div class="descricao-hamburguer">
+                        <h1> Hambúrguer duplo & cheddar </h1>
+                    </div>
+                    <div class="caixa-preco-home">
+                        <div class="descricao-produto-home">
+                            <p> Hambúrguer </p>
+                            <p> Cheddar </p>
+                            <p> Bacon </p>
+                        </div>
+                        <div class="preco-home">
+                            <p> Apenas </p>
+                            <h2> R$ 15,99 </h2>
+                        </div>
+                        <div class="saiba-mais">
+                            <p> + </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="caixa-right-home">
+                    <div class="caixa-img-home">
+                        <img src="imagens/img-principal-home.png" alt="">
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL HOME -->
+        </section> <!-- FIM HOME -->
+
+        <!-------------------------------------------------------------->
+
+        <section id="container-sobre"> <!-- INICIO CONTAINER SOBRE -->
+            <div class="caixa-principal-sobre"> <!-- INICIO CAIXA PRINCIPAL SOBRE -->
+                <div class="img-left-sobre">
+                    <img src="imagens/img-left-sobre.png" alt="">
+                </div>
+
+                <div class="caixa-left-sobre">
+                    <div class="titulo-bemVindo">
+                        <h3> Bem vindo </h3>
+                        <div class="linha-sobre"> </div>
+                    </div>
+                    <div class="titulo-sobre">
+                        <h1> fazemos o melhor hambúrguer da cidade. </h1>
+                    </div>
+                    <div class="descricao-sobre">
+                        <p> Venha experimentar o melhor hambúrguer da cidade. Feito com 
+                            os melhores cortes de carne, tempero especial e assado na 
+                            brasa. Hamburgueria <i>BURGER</i>, a melhor opção para 
+                            sua fome! </p>
+                    </div>
+                    <div class="btn-sobre">
+                        <button type="button"> Mais sobre nós </button>
+                    </div>
+                </div>
+
+                <!---->
+
+                <div class="caixa-rigth-sobre">
+                    <img src="imagens/img-sobre.png" alt="">
+                </div>
+            </div> <!-- FIM CAIXA PRINCIPAL SOBRE -->
+        </section> <!-- FIM CONTAINER SOBRE -->
+
+        <!-------------------------------------------------------------->
+
+        <section id="container-produtos"> <!-- INICIO CONTAINER PRODUTOS -->
+            <div class="titulo-produto">
+                <h1> Nossos deliciosos hambúrgueres </h1>
+            </div>
+
+            <div class="caixa-principal-produto"> <!-- INICIO CAIXA PRINCIPAL PRODUTO -->
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> HAMBURGUER </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, Hambúrguer, queijo, tomate, picles e alface </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 9,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-1.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->
+
+ 
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> X-BURGUER </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, Hambúrguer, queijo, e bacon </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 12,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-2.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->
+
+
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> X-BACON </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, 2 Hambúrguer, bacon, tomate, queijo e alface  </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 15,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-3.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->
+
+
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> X-SALADA </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, Hambúrguer, tomate, queijo, cebola e alface  </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 15,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-4.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->      
+            </div> <!-- FIM CAIXA PRINCIPAL PRODUTO -->
+
+            <!---->
+
+            <!---->
+
+            <div class="caixa-principal-produto"> <!-- INICIO CAIXA PRINCIPAL PRODUTO -->
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> X-CALABRESA </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, Hambúrguer, calabresa, queijo, tomate, e alface </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 16,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-5.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->
+
+ 
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> X-FIRE </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, 2 Hambúrguer, queijo, presunto, bacon, alface e tomate </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 18,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-6.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->
+
+
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> X-BACON </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, Hambúrguer frango, tomate, queijo, picles, cebola e alface  </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 19,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-7.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->
+
+
+                <div class="caixa-produto-item"> <!-- INICIO CAIXA-PRODUTO-ITEM -->
+                    <div class="titulo-item">
+                        <h3> X-SALADA </h3>
+                    </div>
+                    <div class="descricao-item">
+                        <p> Pão, 2 Hambúrguer, queijo, e bacon  </p>
+                    </div>
+                    <div class="preco-item">
+                        <p> R$ 18,00 </p>
+                    </div>
+                    <div class="btn-item">
+                        <button class="pecaJa" type="button"> Peça já </button>
+                    </div>
+                    <div class="img-produto">
+                        <img src="imagens/produto-8.png" alt="">
+                    </div>
+                </div> <!-- FIM CAIXA-PRODUTO-ITEM -->      
+            </div> <!-- FIM CAIXA PRINCIPAL PRODUTO -->
+        </section> <!-- FIM CONTAINER PRODUTOS -->
+
+        <!----------------------------------------------------------------->
+
+        <section id="container-ingredient"> <!-- INICIO CONTAINER INGREDIENT -->
+            <div class="caixa-principal-ingredient"> <!-- INICIO CAIXA PRINCIPAL INGREDIENT -->
+                <div class="titulo-ingrediente">
+                    <h3> Ingredientes </h3>
+                    <h1> Assado com ingrediente natural. </h1>
+                </div>
+                <div class="caixa-secundaria-ingredient"> <!-- INICIO CAIXA SECUNDARIA INGREDIENT -->
+                    <div class="caixa-left-ingredient"> <!-- INICIO CAIXA LEFT INGREDIENT -->
+                        <div class="caixa-interna-left-ingredient">
+                            <div class="caixa-titulo-left">
+                                <h3> Pão <span>fresco</span> </h3>
+                            </div>
+                            <div class="descricao-left-ingredient">
+                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, totam labore. Reprehenderit animi corporis, dignissimos nisi rem quam non eos. </p>
+                            </div>
+                        </div>
+
+                        <!---->
+
+                        <div class="caixa-interna-left-ingredient">
+                            <div class="caixa-titulo-left">
+                                <h3> Folha <span>alface</span> </h3>
+                            </div>
+                            <div class="descricao-left-ingredient">
+                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, totam labore. Reprehenderit animi corporis, dignissimos nisi rem quam non eos. </p>
+                            </div>
+                        </div>
+
+                        <!---->
+
+                        <div class="caixa-interna-left-ingredient">
+                            <div class="caixa-titulo-left">
+                                <h3> Queijo <span>brilhante</span> </h3>
+                            </div>
+                            <div class="descricao-left-ingredient">
+                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, totam labore. Reprehenderit animi corporis, dignissimos nisi rem quam non eos. </p>
+                            </div>
+                        </div>
+                    </div> <!-- FIM CAIXA LEFT INGREDIENT -->
+
+                    <!---->
+
+                    <div class="caixa-center-ingredient">
+                        <img src="imagens/img-left-sobre.png" alt="">
+                    </div>
+
+                    <!---->
+
+                    <div class="caixa-right-ingredient"> <!-- INICIO CAIXA RIGHT INGREDIENT -->
+                        <div class="caixa-interna-right-ingredient">
+                            <div class="caixa-titulo-right">
+                                <h3> Manteiga <span>suave</span> </h3>
+                            </div>
+                            <div class="descricao-right-ingredient">
+                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, totam labore. Reprehenderit animi corporis, dignissimos nisi rem quam non eos. </p>
+                            </div>
+                        </div>
+
+                        <!---->
+
+                        <div class="caixa-interna-right-ingredient">
+                            <div class="caixa-titulo-right">
+                                <h3> Cebola <span>elegante</span> </h3>
+                            </div>
+                            <div class="descricao-right-ingredient">
+                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, totam labore. Reprehenderit animi corporis, dignissimos nisi rem quam non eos. </p>
+                            </div>
+                        </div>
+
+                        <!---->
+
+                        <div class="caixa-interna-right-ingredient">
+                            <div class="caixa-titulo-right">
+                                <h3> Carne <span>fatiada</span> </h3>
+                            </div>
+                            <div class="descricao-right-ingredient">
+                                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, totam labore. Reprehenderit animi corporis, dignissimos nisi rem quam non eos. </p>
+                            </div>
+                        </div>
+                    </div> <!-- FIM CAIXA RIGHT INGREDIENT -->
+                </div> <!-- FIM CAIXA SECUNDARIA INGREDIENT -->
+            </div> <!-- FIM CAIXA PRINCIPAL INGREDIENT -->
+        </section> <!-- FIM CONTAINER INGREDIENT -->
+
+        <!----------------------------------------------------------------------->
+
+        <section id="container-cardapio"> <!-- INICIO CONTAINER CARDAPIO -->
+            <div class="titulo-cardapio">
+                <h3> Menu </h3>
+                <h1> Escolha seu combo & faça já seu pedido </h1>
+            </div>
+            <div class="caixa-icones"> <!-- INICIO CAIXA ICONES -->
+                <div class="caixa-icone">
+                    <div class="img-icone">
+                        <img src="imagens/icone-1.png" alt="">
+                    </div>
+                    <div class="descricao-icone">
+                        <h4> Hambúrguer </h4>
+                    </div>
+                </div>
+
+                <div class="caixa-icone">
+                    <div class="img-icone">
+                        <img src="imagens/icone-2.png" alt="">
+                    </div>
+                    <div class="descricao-icone">
+                        <h4> Pizzas </h4>
+                    </div>
+                </div>
+
+                <div class="caixa-icone">
+                    <div class="img-icone">
+                        <img src="imagens/icone-3.png" alt="">
+                    </div>
+                    <div class="descricao-icone">
+                        <h4> Frango </h4>
+                    </div>
+                </div>
+
+                <div class="caixa-icone">
+                    <div class="img-icone">
+                        <img src="imagens/icone-4.png" alt="">
+                    </div>
+                    <div class="descricao-icone">
+                        <h4> Picolé </h4>
+                    </div>
+                </div>
+
+                <div class="caixa-icone">
+                    <div class="img-icone">
+                        <img src="imagens/icone-5.png" alt="">
+                    </div>
+                    <div class="descricao-icone">
+                        <h4> Refrigerante </h4>
+                    </div>
+                </div>
+            </div> <!-- FIM CAIXA ICONES -->
+
+            <!---->
+
+            <div class="caixa-pricipal-cardapio"> <!-- INICIO CAIXA PRINCIPAL CARDAPIO -->
+                <div class="caixa-left-cardapio"> <!-- INICIO CAIXA LEFT CARDAPIO -->
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> Sanduíche de peito defumado </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 16,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> Suco de cranberry spray oceano </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 11,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> 6 unidades de palitos de mussarela </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 7,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> Smoothie de amendoim </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 9,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- FIM CAIXA LEFT CARDAPIO -->
+
+                <!---->
+
+                <div class="caixa-right-cardapio"> <!-- INICIO CAIXA RIGHT CARDAPIO -->
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> Sanduíche de frango desfiado </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 13,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> refrigerante canadense de gengibre </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 10,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> suco de maçã Martinelli </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 6,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="caixa-cardapio">
+                        <div class="titulo-cardapio-item">
+                            <h3> smoothie de manga mania </h3>
+                            <div class="linha-cardapio"></div>
+                            <div class="preco-cardapio">
+                                <p> R$ 8,00 </p>
+                            </div>
+                        </div>
+                        <div class="descricao-cardapio">
+                            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Delectus, nobis laboriosam. Provident commodi ex quia tempora, 
+                                sequi adipisci a odio totam fuga hic. 
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- FIM CAIXA RIGHT CARDAPIO -->
+            </div> <!-- FIM CAIXA PRINCIPAL CARDAPIO -->
+        </section> <!-- FIM CONTAINER CARDAPIO -->
+
+        <!--------------------------------------------------------------------->
+
+        <section id="container-delivery"> <!-- INICIO CONTAINER DELIVERY -->
+            <div class="caixa-principal-delivery"> <!-- INICIO CAIXA PRINCIPAL DELIVERY -->
+                <div class="img-right-delivery">
+                    <img src="imagens/img-left-sobre.png" alt="">
+                </div>
+                <div class="caixa-left-delivery">
+                    <div class="titulo-left-delivery">
+                        <i> Delivery </i>
+                    </div>
+                    <div class="titulo-principal-left">
+                        <h1> Escolha o que deseja, selecione um horário de retirada </h1>
+                    </div>
+                    <div class="descricao-delivery-left">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repudiandae nam architecto debitis iusto quia consequatur 
+                            explicabo expedita praesentium, rem reiciendis ea maxime 
+                            cupiditate cum labore illum sit qui perferendis? Quam! 
+                        </p>
+                    </div>
+                    <div class="caixa-btn-peca-online">
+                        <button type="button"> Peça Online </button>
+                    </div>
+                </div>
+
+                <!---->
+
+                <div class="caixa-img-delivery">
+                    <img src="imagens/img-delivery.png" alt="">
+                </div>
+
+                <!---->
+
+                <div class="caixa-right-delivery">
+                    <div class="titulo-right-delivery">
+                        <i> Recompensa </i>
+                    </div>
+                    <div class="titulo-principal-right">
+                        <h1> Ganhe pontos sempre que fizer um pedido on-line </h1>
+                    </div>
+                    <div class="descricao-delivery-right">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repudiandae nam architecto debitis iusto quia consequatur 
+                            explicabo expedita praesentium, rem reiciendis ea maxime 
+                            cupiditate cum labore illum sit qui perferendis? Quam! 
+                        </p>
+                    </div>
+                    <div class="caixa-btn-saiba-mais">
+                        <button type="button"> Saiba mais </button>
+                    </div>
+                </div>
+            </div>  <!-- FIM CAIXA PRINCIPAL DELIVERY -->
+        </section> <!-- FIM CONTAINER DELIVERY -->
+
+        <!-------------------------------------------------------------------------->
+
+        <section class="depoimentos mySwiper"> <!-- INICIO DEPOIMENTOS -->
+            <div class="depoimentos-container swiper-wrapper"> <!-- INICIO DEPOIMENTO CONTAINER -->
+                <div class="slide swiper-slide"> <!-- INICIO SLIDE -->
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nihil ullam mollitia facere officiis excepturi eveniet 
+                        reiciendis eaque, quo ducimus rerum corrupti veritatis, 
+                        temporibus id necessitatibus voluptate non amet ut odit?
+                    </p>
+                    <div class="person">
+                        <img src="imagens/icone-pessoa-1.png" alt="">
+                        <div class="info-person">
+                            <p class="nome-person"> Luiz Souza </p>
+                            <p class="func-person"> Web developer </p>
+                        </div>
+                    </div>
+                </div> <!-- FIM SLIDE -->
+
+                <div class="slide swiper-slide"> <!-- INICIO SLIDE -->
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nihil ullam mollitia facere officiis excepturi eveniet 
+                        reiciendis eaque, quo ducimus rerum corrupti veritatis, 
+                        temporibus id necessitatibus voluptate non amet ut odit?
+                    </p>
+                    <div class="person">
+                        <img src="imagens/icone-pessoa-2.png" alt="">
+                        <div class="info-person">
+                            <p class="nome-person"> Angela Martins </p>
+                            <p class="func-person"> Cozinheira </p>
+                        </div>
+                    </div>
+                </div> <!-- FIM SLIDE -->
+
+                <div class="slide swiper-slide"> <!-- INICIO SLIDE -->
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nihil ullam mollitia facere officiis excepturi eveniet 
+                        reiciendis eaque, quo ducimus rerum corrupti veritatis, 
+                        temporibus id necessitatibus voluptate non amet ut odit?
+                    </p>
+                    <div class="person">
+                        <img src="imagens/icone-pessoa-3.png" alt="">
+                        <div class="info-person">
+                            <p class="nome-person"> Bruno Oliveira </p>
+                            <p class="func-person"> Engenheiro </p>
+                        </div>
+                    </div>
+                </div> <!-- FIM SLIDE -->
+
+                <div class="slide swiper-slide"> <!-- INICIO SLIDE -->
+                    <i class="bi bi-quote"></i>
+                    <p class="depoi-txt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nihil ullam mollitia facere officiis excepturi eveniet 
+                        reiciendis eaque, quo ducimus rerum corrupti veritatis, 
+                        temporibus id necessitatibus voluptate non amet ut odit?
+                    </p>
+                    <div class="person">
+                        <img src="imagens/icone-pessoa-4.png" alt="">
+                        <div class="info-person">
+                            <p class="nome-person"> Rebeca Santana </p>
+                            <p class="func-person"> Advogada </p>
+                        </div>
+                    </div>
+                </div> <!-- FIM SLIDE -->
+            </div> <!-- FIM DEPOIMENTO CONTAINER -->
+
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+            
+        </section> <!-- FIM DEPOIMENTOS -->
+    </main> <!-- FIM CONTAINER PRINCIPAL -->
+
+    <!------------------------------------------------------------------------------->
+
+    <footer>
+        <div class="caixa-logo-footer">
+            <img src="imagens/img-footer.png" alt="">
+        </div>
+
+        <div class="caixa-principal-footer">
+            <div class="caixa-left-footer">
+                <div class="caixa-endereco">
+                    <h2> Endereço </h2>
+                </div>
+                <div class="descricao-footer">
+                    <p> Av. Lorem ipsum dolor sit - 000. </p>
+                    <p> Av. Phasellus neque felis - 111. </p>
+                    <p> São paulo. </p>
+                </div>
+            </div>
+
+            <div class="caixa-center-footer">
+                <div class="caixa-endereco">
+                    <h2> Reservar uma mesa </h2>
+                </div>
+                <div class="descricao-footer">
+                    <p> Aliquam fringilla a lectus. Ut sollicitudin interdum velit.
+                        Fusce a urna quis est dapibus finibus quis eu nibh. 
+                    </p>
+                    <p> <span> (11) 444-000 </span> </p>
+                </div>
+            </div>
+
+            <div class="caixa-right-footer">
+                <div class="caixa-endereco">
+                    <h2> Horário de funcionamento </h2>
+                </div>
+                <div class="descricao-footer">
+                    <p> Terça - Domingo </p>
+                    <p> 11:00 - 23-30 </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="caixa-descricao-desenvolvedor">
+            <div class="nome-desenvolvedor">
+                <p> Criado por: Gustavo Jankevicius de Amorim </p>
+            </div>
+
+            <div class="contato-cel">
+                <svg width="25" height="25" fill="#a8a8a8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M17.415 14.382c-.298-.149-1.759-.867-2.031-.967-.272-.099-.47-.148-.669.15-.198.296-.767.966-.94 1.164-.174.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.019-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.668-1.612-.916-2.207-.241-.579-.486-.5-.668-.51-.174-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.064 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.57-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.422 7.403h-.004a9.87 9.87 0 0 1-5.032-1.378l-.36-.214-3.742.982.999-3.648-.235-.374a9.861 9.861 0 0 1-1.511-5.26c.002-5.45 4.436-9.884 9.889-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.892 6.993c-.002 5.45-4.436 9.885-9.884 9.885zm8.412-18.297A11.815 11.815 0 0 0 11.992 0C5.438 0 .102 5.335.1 11.892a11.864 11.864 0 0 0 1.587 5.945L0 24l6.304-1.654a11.881 11.881 0 0 0 5.684 1.448h.005c6.554 0 11.89-5.335 11.892-11.893a11.821 11.821 0 0 0-3.48-8.413" clip-rule="evenodd"></path>
+                </svg>
+                <p> (11) 97401-6595 </p>
+            </div>
+
+            <div class="contato-email">
+                <svg width="25" height="25" fill="none" stroke="#a8a8a8" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z"></path>
+                    <path d="m2 8 7.501 6.001a4 4 0 0 0 4.998 0L22 8"></path>
+                </svg>
+                <p> Gustavo.Jankevicius@gmail.com </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+
+</body>
+</html>

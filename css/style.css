@@ -1,0 +1,1456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#container-principal {
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/********************* INICIO SEÇÃO HOME *********************/
+
+#home {
+    width: 100vw;
+    height: 520px;
+    background-image: url(../imagens/img-fundo-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caixa-logo {
+    width: 90px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-logo img {
+    width: 110px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+nav ul li button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    text-decoration: underline;
+    color: rgb(214, 9, 9);
+}
+
+.caixa-right-header {
+    width: 180px;
+    height: 80px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-pedido button {
+    padding: 8px 25px;
+    border-radius: 15px;
+    background: rgb(214, 9, 9);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-pedido button:hover {
+    background: rgb(233, 35, 35);;
+}
+
+.caixa-icon-header {
+    position: relative;
+}
+
+.caixa-icon-header i {
+    color: #fff;
+    font-size: 1.35rem;
+    cursor: pointer;
+}
+
+.numero-carrinho {
+    position: absolute;
+    right: -8px;
+    top: -7px;
+}
+
+.numero-carrinho p {
+    color: #fff;
+    padding: 3px;
+    border-radius: 50%;
+    font-size: .8rem;
+    width: 17px;
+    height: 17px;
+    background: rgb(214, 9, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-principal-home {
+    width: 100%;
+    height: 429px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-left-home {
+    width: 500px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-novidade-cardapio {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.titulo-novidade-cardapio p {
+    color: rgb(214, 9, 9);
+    font-weight: 800;
+    font-size: 1.25rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.linha {
+    width: 100px;
+    height: 1px;
+    border: 1px solid rgb(214, 9, 9);
+}
+
+.descricao-hamburguer {
+    margin-left: -24px;
+    width: 475px;
+    height: 200px;
+}
+
+.descricao-hamburguer h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.caixa-preco-home {
+    position: relative;
+    width: 499px;
+    height: 80px;
+    display: flex;
+    gap: 65px;
+    align-items: center;
+    border-radius: 3px;
+    background: rgb(214, 9, 9);
+    cursor: pointer;
+}
+
+.caixa-preco-home:hover {
+    background: rgb(233, 35, 35);;
+}
+
+.descricao-produto-home {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    margin-left: 1px;
+}
+
+.descricao-produto-home p {
+    color: #fff;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.preco-home p {
+    color: #fff;
+    font-weight: 200;
+    font-size: .8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.preco-home h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.saiba-mais {
+    position: absolute;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.saiba-mais p {
+    color: rgb(214, 9, 9);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/****/
+
+.caixa-right-home {
+    position: relative;
+    width: 500px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-img-home img {
+    position: absolute;
+    width: 350px;
+    top: -15px;
+    left: 90px;
+}
+
+@media screen and (max-width: 430px) {
+    #home {
+        height: 190vh;
+        overflow-x: hidden;
+    }
+
+    .caixa-logo {
+        margin-left: -270px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .caixa-right-header {
+        display: none;
+    }
+
+    .caixa-principal-home {
+        flex-direction: column;
+        height: 115vh;
+    }
+
+    .caixa-left-home {
+        width: 380px;
+    }
+
+    .descricao-hamburguer h1 {
+        font-size: 2.95rem;
+        width: 380px;
+        margin-left: 60px;
+    }
+
+    .caixa-preco-home {
+        width: 380px;
+        gap: 30px;
+    }
+
+    .descricao-produto-home {
+        gap: 10px;
+    }
+
+    .saiba-mais {
+        right: -15px;
+    }
+
+    /******* ESTILO MENU MOBILE ********/
+    .btn-abrir-menu {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+
+    .btn-abrir-menu i {
+        font-size: 40px;
+    }
+
+    .navMobile {
+        display: block;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0%;
+        background-color: #000000e6;
+        height: 100vh;
+        z-index: 99999;
+        overflow: hidden;
+        transition: .8s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile.abrir-menu ~ .overlay-menu {
+        display: block;
+    } 
+
+    .navMobile ul {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .navMobile ul li button {
+        color: #ee9338;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .navMobile ul li button:hover {
+        color: #fff;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 20px 7%;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .overlay-menu {
+        background-color: #000000c7;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 431px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: none;
+    }
+}
+
+/********************* FIM SEÇÃO HOME *********************/
+
+/****/
+
+/****/
+
+/********************* INICIO SEÇÃO SOBRE *********************/
+
+#container-sobre {
+    width: 100vw;
+    height: 100vh;
+}
+
+.img-left-sobre img {
+    position: absolute;
+    width: 200px;
+    top: 140px;
+    left: -110px;
+}
+
+.caixa-principal-sobre {
+    position: relative;
+    width: 100vw;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: #f2f2f2;
+}
+
+.caixa-left-sobre {
+    width: 500px;
+    height: 540px;
+}
+
+.titulo-bemVindo {
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.titulo-bemVindo h3 {
+    font-size: 1.2rem;
+    color: rgb(214, 9, 9);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.linha-sobre {
+    margin-top: 4px;
+    width: 200px;
+    height: 1px;
+    border: 1px solid rgb(214, 9, 9);
+}
+
+.titulo-sobre {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-sobre h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descricao-sobre p {
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.descricao-sobre p i {
+    color: #ee9338;
+}
+
+.btn-sobre {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-sobre button {
+    padding: 10px 30px;
+    background: rgb(214, 9, 9);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-sobre button:hover {
+    background: rgb(233, 35, 35);
+}
+
+/****/
+
+.caixa-rigth-sobre {
+    width: 500px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-rigth-sobre img {
+    width: 600px;
+}
+
+@media screen and (max-width: 430px) {
+    #container-sobre {
+        height: 115vh;
+        margin-top: -420px;
+    }
+
+    .caixa-principal-sobre {
+        width: 380px;
+        height: 110vh;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .img-left-sobre {
+        display: none;
+    }
+
+    .titulo-bemVindo {
+        width: 380px;
+        margin-left: 60px;
+        margin-top: 0;
+        padding-left: 10px;
+    }
+
+    .titulo-sobre {
+        width: 380px;
+        height: 200px;
+        margin-left: 60px;
+        padding-left: 10px;
+    }
+
+    .descricao-sobre {
+        width: 380px;
+        height: 110px;
+        padding-top: 5px;
+        margin-left: 60px;
+        padding-left: 10px;
+    }
+
+    .btn-sobre {
+        width: 380px;
+        margin-left: 60px;
+        padding-left: 10px;
+    }
+
+    .caixa-rigth-sobre {
+        width: 380px;
+        height: 300px;
+        margin-top: -50px;
+    }
+
+    .caixa-rigth-sobre img {
+        width: 460px;
+    }
+}
+
+/********************* FIM SEÇÃO SOBRE *********************/
+
+/****/
+
+/****/
+
+/********************* INICIO SEÇÃO PRODUTOS *********************/
+
+#container-produtos {
+    width: 100%;
+    height: 155vh;
+}
+
+.titulo-produto {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-produto h1 {
+    color: #333;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.caixa-principal-produto {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-produto-item {
+    width: 240px;
+    height: 380px;
+    border: 1px solid #e6e6e6;
+}
+
+.titulo-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-item h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.descricao-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.preco-item {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preco-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(214, 9, 9);
+}
+
+.btn-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-item button {
+    width: 220px;
+    height: 35px;
+    background: rgb(214, 9, 9);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-item button:hover {
+    background: rgb(233, 35, 35);
+}
+
+.img-produto {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-produto img {
+    width: 170px;
+}
+
+@media screen and (max-width: 430px) {
+    #container-produtos {
+        height: 479vh;
+    }
+
+    .titulo-produto {
+        text-align: center;
+    }
+
+    .caixa-principal-produto {
+        flex-direction: column;
+        height: 233vh;
+    }
+
+    .caixa-produto-item {
+        border: 1px solid #ccc;
+    }
+ 
+    .img-produto img {
+        width: 150px;
+    }
+}
+
+/********************* FIM SEÇÃO PRODUTOS *********************/
+
+/****/
+
+/****/
+
+/********************* INICIO SEÇÃO INGREDIENT *********************/
+
+#container-ingredient {
+    width: 100vw;
+    height: 100vh;
+}
+
+.caixa-principal-ingredient {
+    width: 100%;
+    height: 95vh;
+    margin-top: 15px;
+    background-image: url(../imagens/img-fundo-personalizada-preto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo-ingrediente {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo-ingrediente h3 {
+    color: rgb(214, 9, 9);
+    font-weight: 200;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo-ingrediente h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caixa-secundaria-ingredient {
+    width: 100%;
+    height: 453px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-interna-left-ingredient {
+    width: 100%;
+    height: 133px;
+}
+
+.caixa-titulo-left {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.linha-ingredient {
+    width: 150px;
+    border: 1px dotted #ccc;
+}
+
+.descricao-left-ingredient p {
+    color: #adadad;
+    font-size: .85rem;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caixa-titulo-left span {
+    color: rgb(214, 9, 9);
+}
+
+.caixa-titulo-left h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/****/
+
+.caixa-left-ingredient {
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/****/
+
+.caixa-center-ingredient {
+    width: 380px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-center-ingredient img {
+    width: 285px;
+}
+
+/****/
+
+.caixa-right-ingredient {
+    width: 270px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-titulo-right {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+}
+
+.caixa-titulo-right span {
+    color: rgb(214, 9, 9);
+}
+
+.caixa-titulo-right h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.caixa-interna-right-ingredient {
+    width: 100%;
+    height: 133px;
+}
+
+.descricao-right-ingredient p {
+    text-align: end;
+    color: #adadad;
+    font-size: .85rem;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 430px) {
+    #container-ingredient {
+        height: 190vh;
+    }
+
+    .caixa-principal-ingredient {
+        height: 187vh;
+    }
+
+    .titulo-ingrediente {
+        height: 150px;
+    }
+
+    .titulo-ingrediente h3 {
+        font-weight: 600;
+    }
+
+    .caixa-secundaria-ingredient {
+        flex-direction: column;
+        height: 165vh;
+    }
+
+    .caixa-center-ingredient {
+        margin: 15px;
+    }
+}
+
+/********************* FIM SEÇÃO INGREDIENT *********************/
+
+/****/
+
+/****/
+
+/********************* INICIO SEÇÃO CARDAPIO *********************/
+
+#container-cardapio {
+    width: 100%;
+    height: 100vh;
+    background: #f2f2f2;
+}
+
+.titulo-cardapio {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-cardapio h3 {
+    color: rgb(214, 9, 9);
+    font-weight: 200;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo-cardapio h1 {
+    color: #333;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.caixa-icones {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-icone {
+    width: 110px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.caixa-icone:hover {
+    box-shadow: 10px 5px 5px rgb(216, 216, 216);
+}
+
+.img-icone img {
+    width: 50px;
+}
+
+.descricao-icone h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+.caixa-pricipal-cardapio {
+    width: 100%;
+    height: 413px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-left-cardapio {
+    width: 500px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-right-cardapio {
+    width: 500px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-cardapio {
+    position: relative;
+    width: 100%;
+    height: 101px;
+}
+
+.titulo-cardapio-item {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.titulo-cardapio-item h3 {
+    color: #333;
+    font-size: .95rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.linha-cardapio {
+    position: absolute;
+    right: 100px;
+    width: 110px;
+    border: 1px dotted #a4a4a4;
+}
+
+.preco-cardapio {
+    position: absolute;
+    right: 0;
+    color: rgb(214, 9, 9);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.descricao-cardapio {
+    width: 400px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+}
+
+.descricao-cardapio p {
+    color: #333;
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 430px) {
+    #container-cardapio {
+        height: 147vh;
+    }
+
+    .titulo-cardapio {
+        text-align: center;
+        height: 115px;
+    }
+
+    .caixa-cardapio {
+        margin: 5px 0;
+    }
+
+    .caixa-icones {
+        margin-top: 15px;
+        padding: 0 10px;
+        flex-direction: row;
+    }
+
+    .img-icone img {
+        width: 33px;
+    }
+
+    .descricao-icone h4 {
+        font-size: .6rem;
+    }
+
+    .caixa-pricipal-cardapio {
+        height: 116vh;
+        flex-direction: column;
+    }
+
+    .linha-cardapio {
+        display: none;
+    }
+
+    .caixa-left-cardapio {
+        width: 380px;
+    }
+
+    .caixa-right-cardapio {
+        width: 380px;
+        margin-top: -25px;
+    }
+}
+
+/********************* FIM SEÇÃO CARDAPIO *********************/
+
+/****/
+
+/****/
+
+/********************* INICIO SEÇÃO DELIVERY *********************/
+
+#container-delivery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-principal-delivery {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagens/img-fundo-personalizada-bege.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-right-delivery img {
+    position: absolute;
+    width: 200px;
+    right: -100px;
+    top: 100px;
+}
+
+.caixa-left-delivery {
+    width: 500px;
+    height: 400px;
+}
+
+.titulo-left-delivery {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-left-delivery i {
+    color: rgb(214, 9, 9);
+    font-weight: bold;
+}
+
+.titulo-principal-left {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-principal-left h1 {
+    color: #333;
+    font-size: 2.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descricao-delivery-left {
+    width: 380px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.descricao-delivery-left p {
+    color: #868686;
+    font-size: .9rem;
+}
+
+.caixa-btn-peca-online {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.caixa-btn-peca-online button {
+    padding: 6px 25px;
+    border: none;
+    background: rgb(214, 9, 9);
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*****/
+
+.caixa-img-delivery img {
+    width: 300px;
+    left: 480px;
+    top: 160px;
+    position: absolute;
+}
+
+/*****/
+
+.caixa-right-delivery {
+    width: 500px;
+    height: 400px;
+}
+
+.titulo-right-delivery {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.titulo-right-delivery i {
+    color: rgb(214, 9, 9);
+    font-weight: bold;
+}
+
+.titulo-principal-right {
+    width: 400px;
+    height: 200px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-principal-right h1 {
+    color: #333;
+    font-size: 2.4rem;
+    text-align: end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descricao-delivery-right {
+    margin-left: 119px;
+    width: 380px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.descricao-delivery-right p {
+    color: #868686;
+    font-size: .9rem;
+    text-align: end;
+}
+
+.caixa-btn-saiba-mais {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.caixa-btn-saiba-mais button {
+    padding: 6px 25px;
+    border: none;
+    background: rgb(214, 9, 9);
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 430px) {
+    #container-delivery {
+        height: 113vh;
+        margin-top: 20px;
+    }
+
+    .img-right-delivery {
+        display: none;
+    }
+
+    .caixa-img-delivery {
+        display: none;
+    }
+
+    .caixa-principal-delivery {
+        height: 110vh;
+        flex-direction: column;
+    }
+
+    .caixa-left-delivery {
+        width: 380px;
+    }
+
+    .caixa-right-delivery {
+        width: 380px;
+    }
+
+    .titulo-principal-right {
+        width: 380px;
+        margin-left: -1px;
+    }
+
+    .descricao-delivery-right {
+        width: 380px;
+        margin-left: -1px;
+    }
+}
+
+/********************* FIM SEÇÃO DELIVERY *********************/
+
+/****/
+
+/****/
+
+/********************* INICIO SEÇÃO ANALISE *********************/
+.depoimentos {
+    width: 100%;
+    padding: 50px 20px;
+    height: 80vh;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.depoimentos .slide {
+    padding: 40px 60px;
+    cursor: grab;
+}
+
+.depoimentos .slide:active {
+    cursor: grabbing;
+}
+
+.depoimentos i {
+    font-size: 70px;
+    color: #ccc;
+}
+
+.depoimentos p.depoi-txt {
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.slide .person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slide .person img {
+    width: 80px;
+    height: 80px;
+}
+
+.slide .person p.nome-person {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slide .person p.func-person {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/********************* FIM SEÇÃO ANALISE *********************/
+
+/****/
+
+/****/
+
+/********************* INICIO FOOTER *********************/
+
+footer {
+    width: 100%;
+    height: 80vh;
+    margin-top: 20px;
+    background: url(../imagens/img-fundo-footer.png);
+}
+
+.caixa-logo-footer {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-logo-footer img {
+    width: 100px;
+}
+
+.caixa-principal-footer {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caixa-left-footer {
+    width: 300px;
+    height: 180px;
+    text-align: center;
+}
+
+.caixa-endereco {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-endereco h2 {
+    color: #fff;
+}
+
+.descricao-footer p {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+/****/
+
+.caixa-center-footer {
+    width: 300px;
+    height: 180px;
+    text-align: center;
+}
+
+.descricao-footer p span {
+    color: rgb(231, 231, 2);
+    font-weight: bold;
+}
+
+/****/
+
+.caixa-right-footer {
+    width: 300px;
+    height: 180px;
+    text-align: center;
+}
+
+.caixa-descricao-desenvolvedor {
+    width: 100%;
+    height: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nome-desenvolvedor p {
+    color: #a8a8a8;
+    font-size: 1.2rem;
+}
+
+.contato-cel {
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contato-cel {
+    color: #a8a8a8;
+    font-size: 1.2rem;
+}
+
+.contato-email {
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contato-email {
+    color: #a8a8a8;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 430px) {
+    footer {
+        height: 103vh;
+    }
+
+    .caixa-principal-footer {
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .caixa-descricao-desenvolvedor {
+        flex-direction: column;
+        height: 130px;
+        text-align: center;
+    }
+}
